@@ -1,0 +1,12 @@
+{
+	"name": "pwa-template",
+	"version": "1.0.0",
+	"description": "pwa-template 2021",
+	"main": "./index.html",
+	"scripts": {
+		"httpServer": "http-server -c-1 . -p 8888"
+	},
+	"dependencies": {
+		"http-server": "^13.0.2"
+	}
+}

@@ -1,0 +1,46 @@
+body {
+	background: #efefef;
+	color: #333;
+}
+
+.slider-x{
+	scroll-snap-type: x mandatory;
+	width: 100%;
+	height: 100%;
+	overflow-x: scroll;
+	display: flex;
+	/* 非推奨になった */
+	/* -webkit-overflow-scrolling: touch; /* スマホ対応のため必須 */
+	/* overflow-scrolling: touch; /* スマホ対応のため必須 */
+}
+.slider-x > div{
+	scroll-snap-align: center;
+	height: 100%;
+	width: 100%;
+	flex: none;
+	
+	/* 以下フォントの調整 */
+	color: #FFF;
+	font-size: 150%;
+	font-weight: bold;
+	
+	/* 文字の上下左右中央寄せのための記述 */
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+}
+
+/* スライダーのデザインなど */
+.slider-x > div:nth-child(1){background-color: #C7000B}
+.slider-x > div:nth-child(2){background-color: #D28300}
+.slider-x > div:nth-child(3){background-color: #DFD000}
+.slider-x > div:nth-child(4){background-color: #00873C}
+.slider-x > div:nth-child(5){background-color: #005AA0}
+
+/* 問題ページ */
+.question {
+	/* flex: none; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
