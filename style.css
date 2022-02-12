@@ -1,6 +1,7 @@
 body {
 	background: #efefef;
 	color: #333;
+	font-family: "Hiragino Maru Gothic ProN W4, ヒラギノ丸ゴ ProN W4, Hiragino Madru Gothic Pro W4,ヒラギノ丸ゴ Pro W4", sans-serif;
 }
 
 .slider-x{
@@ -9,19 +10,16 @@ body {
 	height: 100%;
 	overflow-x: scroll;
 	display: flex;
-	/* 非推奨になった */
-	/* -webkit-overflow-scrolling: touch; /* スマホ対応のため必須 */
-	/* overflow-scrolling: touch; /* スマホ対応のため必須 */
 }
 .slider-x > div{
-	scroll-snap-align: center;
+	scroll-snap-align: end;
 	height: 100%;
 	width: 100%;
-	flex: none;
+	flex: none;	/* flex の子要素のデフォルト値を解除する */
 	
 	/* 以下フォントの調整 */
 	color: #FFF;
-	font-size: 150%;
+	/* font-size: 150%; */
 	font-weight: bold;
 	
 	/* 文字の上下左右中央寄せのための記述 */
@@ -31,16 +29,51 @@ body {
 }
 
 /* スライダーのデザインなど */
-.slider-x > div:nth-child(1){background-color: #C7000B}
+/* .slider-x > div:nth-child(1){background-color: #C7000B}
 .slider-x > div:nth-child(2){background-color: #D28300}
 .slider-x > div:nth-child(3){background-color: #DFD000}
 .slider-x > div:nth-child(4){background-color: #00873C}
-.slider-x > div:nth-child(5){background-color: #005AA0}
+.slider-x > div:nth-child(5){background-color: #005AA0} */
 
-/* 問題ページ */
-.question {
-	/* flex: none; */
+.slider-x > div:nth-child(1){background-color: purple}
+.slider-x > div:nth-child(2){background-color: green}
+
+
+.questionArea {
 	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	/* https://qiita.com/ohmoto_2020/items/a3c92bc327874adfb8e9 */
 	align-items: center;
-	justify-content: center;
+}
+
+.question span {
+	text-align: center;
+	font-size: 1.5em;
+}
+.question h1 {
+	text-align: center;
+	font-size: 4em;
+}
+
+.choices {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.choices label {
+	font-size: 2em;
+}
+
+.debugVerticalLine50 {
+	border-left: 1px solid red;
+	width: 5px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+}
+
+.answerArea {
+	/* position: absolute; */
 }

@@ -1,7 +1,7 @@
 {
-	"name": "pwa-template",
+	"name": "englishi-words-book",
 	"version": "1.0.0",
-	"description": "pwa-template 2021",
+	"description": "english-words-book-2021",
 	"main": "./index.html",
 	"scripts": {
 		"httpServer": "http-server -c-1 . -p 8888"

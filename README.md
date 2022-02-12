@@ -22,3 +22,14 @@ https://web.dev/install-criteria/
 beforeinstallpromptはWeb標準ではありません
 Service WorkerやWebマニフェストファイルとは異なり、ホーム画面への追加プロンプトはWeb標準ではありません。これは、ユーザーがプログレッシブWebアプリをホーム画面に追加するように求められる方法とかどうかを、ブラウザーが常に指示できることを意味します。
 
+## debug 環境
+```
+npm install
+
+npm run httpServer
+```
+
+ブラウザより  
+https://localhost:8888  
+F12 キー 開発モード  
+

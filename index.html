@@ -15,27 +15,33 @@
 		<a href="javascript:window.open('test.html', 'mywindow1', 'width=400, height=300, menubar=no, toolbar=no, scrollbars=yes');">新しいウィンドウ開ける？</a> -->
 
 	  <div class="slider-x">
-			<div class="question">
-				<h1>water</h1>
-				<div>
-					<input type="radio" id="first" name="answer" value="水">
-					<label for="first">水</label>
+			<div class="questionArea">
+				<div class="question">
+					<span>次の単語の意味を回答せよ</span>
+					<h1>water</h1>
 				</div>
-				<div>
-					<input type="radio" id="second" name="answer" value="油">
-					<label for="second">油</label>
+				<div class="choices">
+					<div>
+						<input type="radio" id="first" name="choices" value="水">
+						<label for="first">水</label>
+					</div>
+					<div>
+						<input type="radio" id="second" name="choices" value="油">
+						<label for="second">油</label>
+					</div>
+					<div>
+						<input type="radio" id="thrid" name="choices" value="火">
+						<label for="thrid">火</label>
+					</div>
+					<div>
+						<input type="radio" id="fourth" name="choices" value="土">
+						<label for="fourth">土</label>
+					</div>
 				</div>
-				<div>
-					<input type="radio" id="thrid" name="answer" value="火">
-					<label for="thrid">火</label>
-				</div>
-				<div>
-					<input type="radio" id="fourth" name="answer" value="土">
-					<label for="fourth">土</label>
-				</div>
-			</div>
-			<div>
+			</div>		
+			<div class="answerArea">
 				<h1>正解</h1>
+				<h1>不正解</h1>
 				<h1>water</h1>
 				<h1>水</h1>
 			</div>
@@ -46,5 +52,10 @@
 			-->
 	  </div>
 
+		<div>
+			<button id="swipe_btn" type="button">回答へ</button>
+		</div>
+
+		<div class="debugVerticalLine50"></div>
 	</body>
 </html>
